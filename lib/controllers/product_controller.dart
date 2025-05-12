@@ -1,4 +1,4 @@
-import 'dart:convert';
+// import 'dart:convert';
 import 'dart:io';
 import 'package:http/http.dart' as http;
 import 'package:cloudinary_public/cloudinary_public.dart';
@@ -7,6 +7,7 @@ import 'package:vendor_app/models/product.dart';
 import 'package:vendor_app/services/manage_http_response.dart';
 
 class ProductController {
+  //Upload Products
   Future<void> uploadProduct({
     required String productName,
     required double productPrice,
@@ -30,7 +31,7 @@ class ProductController {
             CloudinaryFile.fromFile(pickedImages[i].path, folder: productName),
           );
           images.add(cloudinaryResponse.secureUrl);
-          print(images);
+          // print(images);
         }
 
         if (category.isNotEmpty && subCategory.isNotEmpty) {
@@ -46,7 +47,7 @@ class ProductController {
             subCategory: subCategory,
             images: images,
           );
-          print(product.toJson());
+          // print(product.toJson());
           http.Response response = await http.post(
             Uri.parse('$uri/api/add-product'),
             body: product.toJson(),
@@ -66,13 +67,13 @@ class ProductController {
           showSnackBar(context, "Select Category");
         }
 
-        print(images);
+        // print(images);
       } else {
         showSnackBar(context, 'Select Image');
       }
-    } catch (e, stacktrace) {
-      print('❌ Error in uploadProduct: $e');
-      print('📍 Stacktrace: $stacktrace');
+    } catch (e) {
+      // print('❌ Error in uploadProduct: $e');
+      // print('📍 Stacktrace: $stacktrace');
       showSnackBar(context, 'Error uploading product. Check logs.');
     }
   }

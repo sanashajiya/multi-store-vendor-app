@@ -1,0 +1,2 @@
+C:/Users/ssana/Documents/App/vendor_app/android/app/.cxx/Debug/6x6s442s/x86/CMakeFiles/edit_cache.dir
+C:/Users/ssana/Documents/App/vendor_app/android/app/.cxx/Debug/6x6s442s/x86/CMakeFiles/rebuild_cache.dir
