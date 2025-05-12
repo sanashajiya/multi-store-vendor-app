@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:lucide_icons/lucide_icons.dart';
+// import 'package:lucide_icons/lucide_icons.dart';
 import 'package:vendor_app/views/screens/nav_screens/earnings_screen.dart';
 import 'package:vendor_app/views/screens/nav_screens/edit_screen.dart';
 import 'package:vendor_app/views/screens/nav_screens/orders_screen.dart';
