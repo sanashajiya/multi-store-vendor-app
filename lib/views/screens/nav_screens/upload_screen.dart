@@ -240,7 +240,7 @@ class _UploadScreenState extends ConsumerState<UploadScreen> {
                             } else {
                               return DropdownButton<Subcategory>(
                                   value: selectedSubcategory,
-                                  hint: Text('Select Category'),
+                                  hint: Text('Select SubCategory'),
                                   items: snapshot.data!
                                       .map((Subcategory subcategory) {
                                     return DropdownMenuItem(
